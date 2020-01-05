@@ -1,10 +1,10 @@
 package dataStructure;
 
-import java.io.Serializable;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 
-public class DGraph implements graph, Serializable
+public class DGraph implements graph
 {
 	//HashMap <id , Node>
 	private HashMap <Integer , node_data> nodesHashMap;
@@ -229,5 +229,10 @@ public class DGraph implements graph, Serializable
 	public int getMC()
 	{
 		return this.mc;
+	}
+
+	public HashMap<Integer, node_data> getNodes()
+	{
+		return this.nodesHashMap;
 	}
 }

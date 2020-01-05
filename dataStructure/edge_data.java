@@ -10,12 +10,12 @@ public interface edge_data {
 	 * The id of the source node of this edge.
 	 * @return
 	 */
-	public int getSource();
+	public int getSrc();
 	/**
 	 * The id of the destination node of this edge
 	 * @return
 	 */
-	public int getDestination();
+	public int getDest();
 	/**
 	 * @return the weight of this edge (positive value).
 	 */

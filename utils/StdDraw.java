@@ -28,6 +28,7 @@ package utils;
  ******************************************************************************/
 
 import java.awt.BasicStroke;
+
 import java.awt.Color;
 import java.awt.FileDialog;
 import java.awt.Font;
@@ -74,6 +75,10 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
+
+import algorithms.Graph_Algo;
+import dataStructure.graph;
+import gui.Graph_GUI;
 
 /**
  *  The {@code StdDraw} class provides a basic capability for
@@ -480,6 +485,8 @@ import javax.swing.KeyStroke;
  */
 public final class StdDraw implements ActionListener, MouseListener, MouseMotionListener, KeyListener {
 
+	public static Graph_Algo graph=new Graph_Algo();
+	public static Graph_GUI gui= new Graph_GUI();
 	/**
 	 *  The color black.
 	 */
@@ -1900,7 +1907,6 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 		StdDraw.setPenColor(StdDraw.WHITE);
 		StdDraw.text(0.8, 0.8, "white text");
 	}
-
 }
 
 

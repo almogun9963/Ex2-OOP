@@ -49,51 +49,82 @@ public class Edge implements edge_data
     }
 
     //getters and setters method
-    public int getSource()
+    /**
+	 * The id of the source node of this edge.
+	 * @return
+	 */
+    public int getSrc()
     {
         return this.source;
     }
-
-    public void setSource(int source)
+    /**
+	 * Allow setting the id of the source node of this edge.
+	 * @return
+	 */
+    public void setSrc(int source)
     {
         this.source = source;
     }
-
-    public int getDestination()
+    /**
+	 * The id of the destination node of this edge
+	 * @return
+	 */
+    public int getDest()
     {
         return this.destination;
     }
-
-    public void setDestination(int destination)
+    /**
+	 * Allow setting the id of the destination node of this edge
+	 * @return
+	 */
+    public void setDest(int destination)
     {
         this.destination = destination;
     }
-
+    /**
+	 * @return the weight of this edge (positive value).
+	 */
     public double getWeight()
     {
         return this.weight;
     }
-
+    /**
+	 * Allow setting the weight of this edge (positive value).
+	 */
     public void setWeight(double weight)
     {
         this.weight = weight;
     }
-
+    /**
+	 * Temporal data (aka color: e,g, white, gray, black) 
+	 * which can be used be algorithms 
+	 * @return
+	 */
     public int getTag()
     {
         return this.tag;
     }
-
+    /** 
+	 * Allow setting the "tag" value for temporal marking an edge - common 
+	 * practice for marking by algorithms.
+	 * @param t - the new value of the tag
+	 */
     public void setTag(int tag)
     {
         this.tag = tag;
     }
-
+    /**
+	 * return the remark (meta data) associated with this edge.
+	 * @return
+	 */
     public String getInfo()
     {
         return this.info;
     }
-
+    /**
+	 * Allows changing the remark (meta data) associated with this edge.
+	 * @param s
+	 */
     public void setInfo(String info)
     {
         this.info = info;
@@ -116,4 +147,5 @@ public class Edge implements edge_data
         return "source = " + this.source + " , destination = " + this.destination +
         " , weight = " + this.weight + " , tag = " + this.tag + " , info = " + this.info;
     }
+
 }
